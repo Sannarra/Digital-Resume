@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>CV Lisa Bourdon</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+    <header>
+        <nav class="navbar">
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </span>
+            <a href="#"><img src="img/logo.png" alt="logo"></a>
+            <ul class="main-nav" id="js-menu">
+                <li>
+                    <a href="#" class="nav-links">Home</a>
+                </li>
+                <li>
+                    <a href="#bio" class="nav-links">About me</a>
+                </li>
+                <li>
+                    <a href="#comp" class="nav-links">Skills</a>
+                </li>
+                <li>
+                    <a href="#rea" class="nav-links">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contact" class="nav-links">Contact me</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="canvas">
+            <canvas id="canvas1">Lisa Bourdon </canvas>
+        </div>
+    </header>
+
+    <main>
+        <section class="explanation">
+            <!-- TODO : faire les svg d'un bonhome qui parle (animation js à ajouter pour faire bouger les levres) ANIMATION DU TEXTE-->
+
+            <h1>Welcome here!</h1>
+            <p>Hi! Thanks for coming to explore my portfolio! <br> My name is Lisa Bourdon, I'm 20 years old and I'm
+                in
+                Pre-Msc at Epitech in Nantes. <br> In order to know more about me, I let you chat with my faithful
+                companion : Sinny ! <br> How does it work ? Well it's very simple, just click on the question you have
+                and
+                Sinny will explain you all in detail and guide you in the other pages ! <br> </p>
+
+        </section>
+
+        <section class="chat">
+            <div>
+                <!-- TODO : faire le svg l'animation du bot -->
+                <?xml version="1.0" encoding="UTF-8"?><svg id="Calque_2" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 283.67 231.26">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: #fff;
+                            }
+
+                            .cls-2 {
+                                fill: #29294c;
+                            }
+
+                            .cls-3 {
+                                fill: #afabdd;
+                            }
+
+                            .cls-4 {
+                                fill: url(#Dégradé_sans_nom_10-2);
+                            }
+
+                            .cls-5 {
+                                fill: #5757aa;
+                            }
+
+                            .cls-6 {
+                                fill: url(#Dégradé_sans_nom_10);
+                            }
+                        </style>
+                        <radialGradient id="Dégradé_sans_nom_10" cx="95.42" cy="100.27" fx="95.42" fy="100.27" r="45"
+                            gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="#1b1464" />
+                            <stop offset="1" stop-color="#fff" />
+                        </radialGradient>
+                        <radialGradient id="Dégradé_sans_nom_10-2" cx="211.42" cy="87.27" fx="211.42" fy="87.27"
+                            xlink:href="#Dégradé_sans_nom_10" />
+                    </defs>
+                    <g id="visage">
+                        <path
+                            d="M32.6,10.25H251.08c13.98,0,25.33,11.35,25.33,25.33V195.52c0,14.06-11.42,25.48-25.48,25.48H32.46c-13.9,0-25.18-11.28-25.18-25.18V35.58c0-13.98,11.35-25.33,25.33-25.33Z"
+                            transform="translate(-10.58 14.35) rotate(-5.59)" />
+                        <rect class="cls-3" x="29.11" y="27.56" width="248" height="192.37" rx="25.33" ry="25.33"
+                            transform="translate(-11.32 15.49) rotate(-5.59)" />
+                        <g>
+                            <circle class="cls-6" cx="95.42" cy="100.27" r="45" />
+                            <circle class="cls-3" cx="95.42" cy="100.27" r="23" />
+                            <circle class="cls-1" cx="115.42" cy="93.27" r="12.5" />
+                            <circle class="cls-4" cx="211.42" cy="87.27" r="45" />
+                            <circle class="cls-3" cx="211.42" cy="87.27" r="23" />
+                            <circle class="cls-1" cx="231.42" cy="80.27" r="12.5" />
+                        </g>
+                    </g>
+                    <g id="bouche3">
+                        <g>
+                            <path class="cls-5"
+                                d="M88.33,175.5s60.48,2.08,134.6-29.96c0,0-4.5,5.51-6.59,13.58s-10.32,41.08-50.69,50.14c-40.36,9.06-63.35-20.59-63.35-20.59,0,0-6.31-7.87-13.97-13.17Z" />
+                            <path class="cls-2" d="M98.42,178.27s88-2,115-24c0,0-6,37-47,50s-68-26-68-26Z" />
+                            <path class="cls-1"
+                                d="M132.6,204.1s8.83-7.83,19.83-6.83,14-2,14-2c0,0,6.4-2.79,15.7,2.11,0,0-22.36,15.55-49.53,6.72Z" />
+                        </g>
+                    </g>
+                </svg>
+
+            </div>
+            <div id="chat_bot">
+                <h1>Hello! I'm Sinny </h1>
+                <p>I am realy happy to speak with you. First, can I have your name?</p>
+                <div>
+                    <input id="input" type="text" placeholder="Your name" autocomplete="off" autofocus="true" />
+                </div>
+                <!-- <button>Who is Lisa?</button>
+                <button>See her portfolio</button>
+                <button>What's her skills?</button>
+                <button>Contact her</button> -->
+
+            </div>
+        </section>
+
+
+
+        <section class="contact">
+            <h1>Contact me:</h1>
+            <div class="logo">
+                <div>
+                    <a href="https://github.com/Sannarra">
+                        <img src="img/git.png" alt="github">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/in/lisa-bourdon/">
+                        <img src="img/link.png" alt="github">
+                    </a>
+                </div>
+                <div>
+                    <a href="lisa.bourdon10@gmail.com">
+                        <img src="img/mail.png" alt="github">
+                    </a>
+                </div>
+            </div>
+
+            <!-- TODO : formulaire de contact relier à la BDD -->
+        </section>
+
+        <script src="js/script.js" charset="utf-8"></script>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
