@@ -10,13 +10,6 @@ font-family: 'Syncopate', sans-serif; */
     margin: 0;
 }
 
-canvas {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-
 body {
     background-color: #181039;
     font-family: Arial, Helvetica, sans-serif;
@@ -31,12 +24,13 @@ header {
     background-size: cover;
 }
 
-footer {
-    padding: 2em;
-    text-align: center;
-    font-size: small;
-    color: white;
+canvas {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
+
 
 h1 {
     font-family: 'Rubik', sans-serif;
@@ -137,11 +131,19 @@ button {
 
 button:hover {
     background-color: rgb(162, 126, 190);
+    cursor: pointer;
 }
 
 .row div img {
     width: 100%;
     align-items: center;
+}
+
+footer {
+    padding: 2em;
+    text-align: center;
+    font-size: small;
+    color: white;
 }
 
 
@@ -182,6 +184,8 @@ button:hover {
         color: rgba(255, 255, 255, 1);
     }
 }
+
+/* ///////////responsive main //////////////// */
 
 
 @media screen and (max-width: 480px) {

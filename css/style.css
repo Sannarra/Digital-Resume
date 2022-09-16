@@ -51,10 +51,6 @@ h1 {
 
 #questions {
     margin-top: 2em;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
 }
 
 
@@ -269,23 +265,19 @@ section {
 }
 
 .chat a:nth-child(1) {
-    filter: hue-rotate(270deg);
+    filter: hue-rotate(50deg);
 }
 
 .chat a:nth-child(2) {
-    filter: hue-rotate(110deg);
+    filter: hue-rotate(25deg);
 }
 
 .chat a span {
-    filter: hue-rotate(0deg)
-}
-
-.chat a .contour {
     position: absolute;
     display: block;
 }
 
-.chat a .contour:nth-child(1) {
+.chat a span:nth-child(1) {
     top: 0;
     left: 0;
     width: 100%;
@@ -305,7 +297,7 @@ section {
     }
 }
 
-.chat a .contour:nth-child(2) {
+.chat a span:nth-child(2) {
     top: -100%;
     right: 0;
     width: 2%;
@@ -326,7 +318,7 @@ section {
     }
 }
 
-.chat a .contour:nth-child(3) {
+.chat a span:nth-child(3) {
     bottom: 0;
     right: 0;
     width: 100%;
@@ -348,7 +340,7 @@ section {
 }
 
 
-.chat a .contour:nth-child(4) {
+.chat a span:nth-child(4) {
     bottom: -100%;
     left: 0;
     width: 2px;

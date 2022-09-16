@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Syncopate&display=swap');
 /* font-family: 'Audiowide', cursive;
 font-family: 'Syncopate', sans-serif; */
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
-/* font-family: 'Rubik', sans-serif; */
 
 * {
     box-sizing: border-box;
@@ -37,7 +35,9 @@ h2 {
     margin: 1em 0;
 }
 
-.typing-demo {
+/* /////////////////////////typing animation/////////////////////// */
+
+.typing {
     width: 17ch;
     animation: typing 3s steps(22), blink .5s step-end infinite alternate;
     white-space: nowrap;
@@ -182,6 +182,9 @@ canvas {
     }
 
 }
+
+
+/* ////////////////////responsive main////////////////////// */
 
 @media screen and (max-width: 768px) {
 
