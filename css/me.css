@@ -199,4 +199,8 @@ canvas {
         align-items: center;
     }
 
+    .resume div:last-child {
+        margin: 0 2em;
+    }
+
 }

@@ -184,7 +184,6 @@ section {
 /* //////////////section explanation//////////////////*/
 
 .explanation {
-    z-index: 2;
     padding: 4em;
     text-align: justify;
 }
@@ -410,6 +409,9 @@ section {
 
     }
 
+    .explanation {
+        padding: 2em;
+    }
 
 
 }
