@@ -19,6 +19,10 @@ body {
 
 header {
     background-image: url("../img/space.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 footer {
@@ -117,6 +121,7 @@ nav img {
 
 .resume {
     display: flex;
+    margin-top: 2em;
 }
 
 .resume img {
@@ -128,9 +133,16 @@ nav img {
     margin: 0 3em;
 }
 
+#pictureMe {
+    align-items: center;
+}
 
-
-
+canvas {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
 
 @media screen and (min-width: 768px) {
     .navbar {
@@ -181,6 +193,7 @@ nav img {
     #pictureMe {
         display: flex;
         justify-content: center;
+        align-items: center;
     }
 
 }

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/portfolio.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
 <body id="portfolio">
     <header>
@@ -14,10 +15,10 @@
             <span class="navbar-toggle" id="js-navbar-toggle">
                 <i class="fa fa-bars" aria-hidden="true"></i>
             </span>
-            <a href="/index_old.html"><img src="img/logo.png" alt="logo"></a>
+            <a href="/index.html"><img src="img/logo.png" alt="logo"></a>
             <ul class="main-nav" id="js-menu">
                 <li>
-                    <a href="/index_old.html" class="nav-links">Home</a>
+                    <a href="/index.html" class="nav-links">Home</a>
                 </li>
                 <li>
                     <a href="/me.html" class="nav-links">About me</a>
@@ -29,47 +30,88 @@
                     <a href="/portfolio.html" class="nav-links">Portfolio</a>
                 </li>
                 <li>
-                    <a href="index_old.html#contact" class="nav-links">Contact me</a>
+                    <a href="index.html#contact" class="nav-links">Contact me</a>
                 </li>
             </ul>
         </nav>
-
+        <div class="canvas">
+            <canvas id="canvas1">Lisa Bourdon </canvas>
+        </div>
     </header>
     <main>
-        <div>
-            <a href="index.html"><img src="img/back_to_chat.png" alt="logo" class="back"></a>
         </div>
-        <h1>Here are some of the projects I have done</h1>
+        <div class="row">
+            <div>
+                <img src="img/javascript.svg" alt="Projet 1">
+            </div>
+            <div>
+                <h2>Javascript</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta eos voluptatem, non quod placeat
+                    beatae debitis illum sed tempore? Velit dolore minima dicta consequatur atque quasi mollitia
+                    necessitatibus ipsam! Quaerat?</p>
+                <div>
+                    <button onclick="window.location.href='https://github.com/Sannarra';">See
+                        My GitHub</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <h2>PHP</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta eos voluptatem, non quod placeat
+                    beatae debitis illum sed tempore? Velit dolore minima dicta consequatur atque quasi mollitia
+                    necessitatibus ipsam! Quaerat?</p>
+                <div>
+                    <button href="https://github.com/Sannarra">See My Github</a>
+                </div>
+            </div>
+            <div>
+                <img src="img/php.svg" alt="Projet 1">
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <img src="img/laravel.svg" alt="Projet 1">
+            </div>
+            <div>
+                <h2>Laravel</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta eos voluptatem, non quod placeat
+                    beatae debitis illum sed tempore? Velit dolore minima dicta consequatur atque quasi mollitia
+                    necessitatibus ipsam! Quaerat?</p>
+                <div>
+                    <button href="https://github.com/Sannarra">See My Github</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <h2>HTML5</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta eos voluptatem, non quod placeat
+                    beatae debitis illum sed tempore? Velit dolore minima dicta consequatur atque quasi mollitia
+                    necessitatibus ipsam! Quaerat?</p>
+                <div>
+                    <button href="https://github.com/Sannarra">See My Github</a>
+                </div>
+            </div>
+            <div>
+                <img src="img/html.svg" alt="Projet 1">
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <img src="img/css.svg" alt="Projet 1">
+            </div>
+            <div>
+                <h2>CSS3</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta eos voluptatem, non quod placeat
+                    beatae debitis illum sed tempore? Velit dolore minima dicta consequatur atque quasi mollitia
+                    necessitatibus ipsam! Quaerat?</p>
+                <div>
+                    <button href="https://github.com/Sannarra">See My Github</a>
+                </div>
+            </div>
         </div>
 
-        <div class="row">
-            <div>
-                <img src="img/test.png" alt="Projet 1">
-            </div>
-            <div>
-                <h2>Ceci est un projet</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta eos voluptatem, non quod placeat
-                    beatae debitis illum sed tempore? Velit dolore minima dicta consequatur atque quasi mollitia
-                    necessitatibus ipsam! Quaerat?</p>
-                <div>
-                    <button href="#">See project</a>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div>
-                <h2>Ceci est un skills</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta eos voluptatem, non quod placeat
-                    beatae debitis illum sed tempore? Velit dolore minima dicta consequatur atque quasi mollitia
-                    necessitatibus ipsam! Quaerat?</p>
-                <div>
-                    <button href="#">See project</a>
-                </div>
-            </div>
-            <div>
-                <img src="img/test.png" alt="Projet 1">
-            </div>
-        </div>
 
 
     </main>
@@ -77,4 +119,7 @@
     <footer>
         <p> COPYRIGHT 2022 © LISA BOURDON</p>
     </footer>
+    <script src="js/skills.js" charset="utf-8"></script>
 </body>
+
+</html>

@@ -5,36 +5,24 @@ canvas.width = window.innerWidth;
 canvas.height = canvas.width / 6;
 
 // Write a a large "Lisa Bourdon" in the center of the canvas and make a particle version of it
-let particlesArray = [];
-let hue = 0;
-
-window.addEventListener('resize', function () {
-    canvas.width = window.innerWidth;
-    canvas.height = canvas.width / 6;
-});
-
-const mouse = {
-    x: null,
-    y: null,
-    radius: (canvas.height / 80) * (canvas.width / 80)
-};
-
-ctx.font = 'bold 90px Arial';
+const text = 'Lisa Bourdon';
+ctx.font = '100px Verdana';
 ctx.fillStyle = 'white';
-ctx.fillText('Lisa Bourdon', 0, 90);
-const data = ctx.getImageData(0, 0, 300, 150);
+ctx.fillText(text, 0, 100);
+
+const textCoordinates = ctx.getImageData(0, 0, canvas.width, canvas.height);
 
 class Particle {
-    constructor(x, y) {
-        this.x = x;
-        this.y = y;
-        this.size = 3;
+    constructor() {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+        this.size = Math.random() * 5 + 1;
         this.baseX = this.x;
         this.baseY = this.y;
-        this.density = (Math.random() * 30) + 1;
+        this.density = (Math.random() * 40) + 5;
     }
     draw() {
-        ctx.fillStyle = 'hsl(' + hue + ', 100%, 50%)';
+        ctx.fillStyle = 'white';
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
         ctx.closePath();
@@ -67,64 +55,7 @@ class Particle {
     }
 }
 
-function init() {
-    particlesArray = [];
-    for (let y = 0, y2 = data.height; y < y2; y++) {
-        for (let x = 0, x2 = data.width; x < x2; x++) {
-            if (data.data[(y * 4 * data.width) + (x * 4) + 3] > 128) {
-                let positionX = x;
-                let positionY = y;
-                particlesArray.push(new Particle(positionX * 10, positionY * 10));
-            }
-        }
-    }
-}
 
-function animate() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    for (let i = 0; i < particlesArray.length; i++) {
-        particlesArray[i].draw();
-        particlesArray[i].update();
-    }
-    connect();
-    requestAnimationFrame(animate);
-}
-
-function connect() {
-    let opacityValue = 1;
-    for (let a = 0; a < particlesArray.length; a++) {
-        for (let b = a; b < particlesArray.length; b++) {
-            let distance = ((particlesArray[a].x - particlesArray[b].x) * (particlesArray[a].x - particlesArray[b].x))
-                + ((particlesArray[a].y - particlesArray[b].y) * (particlesArray[a].y - particlesArray[b].y));
-            if (distance < (canvas.width / 7) * (canvas.height / 7)) {
-                opacityValue = 1 - (distance / 20000);
-                ctx.strokeStyle = 'rgba(255,255,255,' + opacityValue + ')';
-                ctx.lineWidth = 1;
-                ctx.beginPath();
-                ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
-                ctx.lineTo(particlesArray[b].x, particlesArray[b].y);
-                ctx.stroke();
-            }
-        }
-    }
-}
-
-init();
-animate();
-
-window.addEventListener('mousemove', function (event) {
-    mouse.x = event.x;
-    mouse.y = event.y;
-});
-
-window.addEventListener('mouseout', function () {
-    mouse.x = undefined;
-    mouse.y = undefined;
-});
-
-setInterval(function () {
-    hue += 0.5;
-}, 50);
 
 // const canvas = document.getElementById('canvas1');
 // const ctx = canvas.getContext('2d');

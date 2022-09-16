@@ -19,6 +19,12 @@ body {
 header {
     background-image: url("../img/space.jpg");
     height: 100vh;
+    min-height: 100vh;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 footer {
@@ -45,6 +51,10 @@ h1 {
 
 #questions {
     margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -162,11 +172,6 @@ canvas {
 }
 
 
-
-
-
-
-
 section {
     color: whitesmoke;
 }
@@ -174,7 +179,8 @@ section {
 /* //////////////section explanation//////////////////*/
 
 .explanation {
-    margin: 2em;
+    z-index: 2;
+    padding: 4em;
     text-align: justify;
 }
 
@@ -205,10 +211,17 @@ section {
 /* //////////////section chat//////////////////*/
 
 .chat {
+    background-image: url("../img/space.jpg");
     display: flex;
     align-items: center;
-    background-color: lightblue;
     padding: 10% 0;
+    color: #181039;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 .chat div:first-child {
@@ -221,10 +234,139 @@ section {
 }
 
 .chat div:nth-child(2) {
-    background-color: #181039;
+    background-color: #CBC9E9;
     padding: 3em;
     width: 100%;
     border-radius: 20px;
+}
+
+
+/* //////////////button colored//////////////// */
+
+.chat a {
+    position: relative;
+    font-family: 'Audiowide', cursive;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 2% 0;
+    color: blue;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    overflow: hidden;
+    margin-right: 5%;
+
+}
+
+.chat a:hover {
+    background: lightblue;
+    color: #050801;
+    box-shadow: 0 0 5px lightblue,
+        0 0 25px lightblue,
+        0 0 50px lightblue,
+        0 0 200px lightblue;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+.chat a:nth-child(1) {
+    filter: hue-rotate(270deg);
+}
+
+.chat a:nth-child(2) {
+    filter: hue-rotate(110deg);
+}
+
+.chat a span {
+    filter: hue-rotate(0deg)
+}
+
+.chat a .contour {
+    position: absolute;
+    display: block;
+}
+
+.chat a .contour:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2%;
+    background: linear-gradient(90deg, transparent, #03E9F4);
+    animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.chat a .contour:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2%;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03E9F4);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+@keyframes animate2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.chat a .contour:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2%;
+    background: linear-gradient(270deg, transparent, #03E9F4);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+
+@keyframes animate3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+
+.chat a .contour:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03E9F4);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+
+@keyframes animate4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
 }
 
 /* //////////////section contact//////////////////*/
@@ -249,7 +391,7 @@ section {
 
 /* ///////////////CHATBOT//////////////// */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 764px) {
 
     .chat {
         display: block;
