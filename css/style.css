@@ -51,6 +51,15 @@ h1 {
 
 #questions {
     margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 900px;
+}
+
+#questions>a {
+    flex-shrink: 0;
 }
 
 
@@ -234,6 +243,7 @@ section {
     padding: 3em;
     width: 100%;
     border-radius: 20px;
+    margin-right: 2em;
 }
 
 
@@ -394,4 +404,12 @@ section {
         padding: 1em;
         margin: 2em 1em;
     }
+
+    .chat div:nth-child(2) {
+        margin: 0;
+
+    }
+
+
+
 }
