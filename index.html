@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>CV Lisa Bourdon</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style_old.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -20,16 +20,16 @@
                     <a href="#" class="nav-links">Home</a>
                 </li>
                 <li>
-                    <a href="#bio" class="nav-links">About me</a>
+                    <a href="/me.html" class="nav-links">About me</a>
                 </li>
                 <li>
-                    <a href="#comp" class="nav-links">Skills</a>
+                    <a href="/skills.html" class="nav-links">Skills</a>
                 </li>
                 <li>
-                    <a href="#rea" class="nav-links">Portfolio</a>
+                    <a href="/portfolio.html" class="nav-links">Portfolio</a>
                 </li>
                 <li>
-                    <a href="#contact" class="nav-links">Contact me</a>
+                    <a href="/index_old.html#contact" class="nav-links">Contact me</a>
                 </li>
             </ul>
         </nav>
@@ -42,11 +42,17 @@
         <section class="explanation">
             <!-- TODO : faire les svg d'un bonhome qui parle (animation js à ajouter pour faire bouger les levres) ANIMATION DU TEXTE-->
 
-            <h1>Welcome here!</h1>
+
+            <div>
+                <div class="typing">
+                    <h1>Welcome!</h1>
+                </div>
+            </div>
             <p>Hi! Thanks for coming to explore my portfolio! <br> My name is Lisa Bourdon, I'm 20 years old and I'm
                 in
                 Pre-Msc at Epitech in Nantes. <br> In order to know more about me, I let you chat with my faithful
-                companion : Sinny ! <br> How does it work ? Well it's very simple, just click on the question you have
+                companion : Sinni ! <br> How does it work ? Well it's very simple, just click on the question you
+                have
                 and
                 Sinny will explain you all in detail and guide you in the other pages ! <br> </p>
 
@@ -118,23 +124,41 @@
                 </svg>
 
             </div>
+
+
+
             <div id="chat_bot">
-                <h1>Hello! I'm Sinny </h1>
-                <p>I am realy happy to speak with you. First, can I have your name?</p>
-                <div>
-                    <input id="input" type="text" placeholder="Your name" autocomplete="off" autofocus="true" />
+                <h1>Hello! I'm Sinni </h1>
+                <p>I am realy happy to speak with you. what whould you know about Lisa?</p>
+                <div id="questions">
+                    <!-- <div> -->
+                    <a href="me.html">Her&nbsp;history</a>
+                    <!-- </div> -->
+                    <!-- <div> -->
+                    <a href="portfolio.html">Her&nbsp;portfolio</a>
+                    <!-- </div> -->
+                    <!-- <div> -->
+                    <a href="skills.html">Her&nbsp;skills</a>
+                    <!-- </div> -->
                 </div>
-                <!-- <button>Who is Lisa?</button>
-                <button>See her portfolio</button>
-                <button>What's her skills?</button>
-                <button>Contact her</button> -->
+
+                <!-- <div id="container" class="container">
+                    <div id="chat" class="chat">
+                        <div id="messages" class="messages"></div>
+                        <input id="input" type="text" placeholder="Write something..." autocomplete="off"
+                            autofocus="true" />
+                    </div>
+                </div> -->
+
 
             </div>
         </section>
 
 
 
-        <section class="contact">
+
+
+        <section id="contact">
             <h1>Contact me:</h1>
             <div class="logo">
                 <div>
@@ -158,9 +182,10 @@
         </section>
 
         <script src="js/script.js" charset="utf-8"></script>
+        <script src="js/chat.js" charset="utf-8"></script>
     </main>
 
     <footer>
-
+        <p> COPYRIGHT 2022 © LISA BOURDON</p>
     </footer>
 </body>

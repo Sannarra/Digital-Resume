@@ -14,17 +14,45 @@ body {
     background-color: #181039;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2em;
+    color: white;
 }
 
 header {
     background-image: url("../img/space.jpg");
-    height: 100vh;
 }
 
-h1 {
-    font-family: 'Rubik', sans-serif;
-    font-size: 2em;
+footer {
+    padding: 2em;
+    text-align: center;
+    font-size: small;
     color: white;
+}
+
+h2 {
+    font-family: 'Audiowide', cursive;
+    margin: 1em 0;
+}
+
+.typing-demo {
+    width: 17ch;
+    animation: typing 3s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: 'Rubik', sans-serif;
+    border-right: 3px solid;
+    animation-iteration-count: infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
 }
 
 /* ////////////////////////////////nav////////////////////////////////// */
@@ -82,6 +110,28 @@ nav img {
     display: block;
 }
 
+
+.back {
+    width: 20vh;
+}
+
+.resume {
+    display: flex;
+}
+
+.resume img {
+    width: 40vw;
+    margin: 0 1em;
+}
+
+.resume div:last-child {
+    margin: 0 3em;
+}
+
+
+
+
+
 @media screen and (min-width: 768px) {
     .navbar {
         display: flex;
@@ -118,102 +168,19 @@ nav img {
     .nav-links:hover {
         color: rgba(255, 255, 255, 1);
     }
-}
-
-.marge {
-    margin-left: 5em;
-    margin-right: 5em;
-}
-
-/* ///////////////canvas/////////////////*/
-
-canvas {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-
-
-section {
-    color: whitesmoke;
-}
-
-/* //////////////section explanation//////////////////*/
-
-.explanation {
-    margin: 5%;
-}
-
-
-
-/* //////////////section chat//////////////////*/
-
-.chat {
-    display: flex;
-    align-items: center;
-    background-color: lightblue;
-}
-
-.chat div:first-child {
-    width: 20%;
-    margin: 3em;
-}
-
-.chat img {
-    height: 20vh;
-}
-
-.chat div:nth-child(2) {
-    background-color: #181039;
-    padding: 3em;
-    width: 100%;
-    border-radius: 20px;
-}
-
-/* //////////////section contact//////////////////*/
-
-.contact {
-    background-color: azure;
-    margin: 2%;
-}
-
-.contact h1 {
-    color: black;
-}
-
-
-.logo {
-    display: flex;
 
 }
 
-.logo div {
-    width: 33%;
-    display: flex;
-    justify-content: center;
-    margin: 1em;
-}
+@media screen and (max-width: 768px) {
 
-.logo div img {
-    width: 40%;
-}
+    .resume {
+        flex-direction: column;
+        text-align: justify;
+    }
 
+    #pictureMe {
+        display: flex;
+        justify-content: center;
+    }
 
-
-
-
-
-#portfolio header {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-}
-
-#portfolio h1 {
-    margin: 4%;
-}
-
-.back {
-    width: 15%;
 }

@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Syncopate&display=swap');
+/* font-family: 'Audiowide', cursive;
+font-family: 'Syncopate', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+/* font-family: 'Rubik', sans-serif; */
+
+.first {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+nav img {
+    width: 5em;
+    align-self: center;
+
+}
+
+.navbar {
+    font-size: 18px;
+    background-image: linear-gradient(260deg, #0F056B 0%, #1111 100%);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 10px;
+}
+
+.main-nav {
+    list-style-type: none;
+    display: none;
+}
+
+.nav-links,
+.logo {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.main-nav li {
+    text-align: center;
+    margin: 15px auto;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
+}
+
+.active {
+    display: block;
+}
+
+
+
+
+canvas {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+body {
+    background-color: #121212;
+}
+
+
+
+
+.contenu {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+
+}
+
+.contenu>h1 {
+    display: block;
+    font-family: 'Audiowide', cursive;
+    font-size: 5em;
+    text-align: center;
+    margin: 0;
+    flex: 0 0 20%;
+}
+
+.images {
+    min-width: 60em;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex: 0 0 70%;
+    flex-wrap: wrap;
+}
+
+.capacite {
+    margin: 0 1em;
+    flex: 0 1 15em;
+    justify-content: center;
+}
+
+.aboutMe .capacite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutMe .capacite>img {
+    width: 50%;
+}
+
+.capacite>img {
+    width: 100%;
+    height: 20%;
+    border-radius: 1em;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+}
+
+.noshadow>img {
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.fillbg>img {
+    background-color: rgba(180, 180, 180, .6);
+    padding: .5em;
+    box-sizing: border-box;
+}
+
+.capacite>h2 {
+    font-family: sans-serif;
+    font-weight: normal;
+    color: rgba(255, 255, 255, .8);
+    margin: .5em auto;
+    width: fit-content;
+    min-width: 80%;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 1);
+}
+
+.niveau {
+    color: rgba(220, 220, 220, .8);
+    font-size: .8em;
+}
+
+.gauge {
+    width: 100%;
+    margin: .5em 0;
+    border-radius: 6px;
+    font-size: .6em;
+    font-weight: bold;
+    color: rgba(12, 12, 12, .8);
+    background-color: rgba(220, 220, 220, .8);
+    text-shadow: none;
+}
+
+.innergauge {
+    padding: 2px 3px;
+    border-radius: 6px 0 0 6px;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 150, 220, 1);
+}
+
+#achievements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    border: none;
+    background-color: rgba(211, 155, 103, 1);
+    box-shadow: 0 10px 30px;
+    font-size: 3em;
+    font-family: sans-serif;
+    font-variant: small-caps;
+    width: 30rem;
+    height: 10rem;
+    border-radius: 2rem;
+}
+
+button:active {
+    box-shadow: 0 5px 15px;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .main-nav li {
+        margin: 0;
+    }
+
+    .nav-links {
+        margin-left: 40px;
+    }
+
+    .logo {
+        margin-top: 0;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+    .logo:hover,
+    .nav-links:hover {
+        color: rgba(255, 255, 255, 1);
+    }
+
+    .logo {
+        display: flex;
+
+    }
+
+    .aboutMe .images {
+        display: block;
+        flex-direction: column;
+        height: auto;
+        width: 50%;
+    }
+
+
+    .aboutMe .contenu {
+        display: block;
+        flex-direction: column;
+        height: auto;
+    }
+
+
+}

@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Syncopate&display=swap');
+/* font-family: 'Audiowide', cursive;
+font-family: 'Syncopate', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+/* font-family: 'Rubik', sans-serif; */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #181039;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+
+header {
+    background-image: url("../img/space.jpg");
+    height: 100vh;
+}
+
+footer {
+    padding: 2em;
+    text-align: center;
+    font-size: small;
+    color: white;
+}
+
+h1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 2em;
+    color: white;
+}
+
+.chat a {
+    text-decoration: none;
+    color: black;
+    background-color: aliceblue;
+    padding: .2em;
+    border-radius: 10px;
+    margin-top: 1em;
+}
+
+#questions {
+    margin-top: 2em;
+}
+
+
+/* ////////////////////////////////nav////////////////////////////////// */
+
+nav {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+nav img {
+    width: 5em;
+    align-self: center;
+
+}
+
+.navbar {
+    font-size: 18px;
+    background-image: linear-gradient(260deg, #0F056B 0%, #1111 100%);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 10px;
+}
+
+.main-nav {
+    list-style-type: none;
+    display: none;
+}
+
+.nav-links,
+.logo {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.main-nav li {
+    text-align: center;
+    margin: 15px auto;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
+}
+
+.active {
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .main-nav li {
+        margin: 0;
+    }
+
+    .nav-links {
+        margin-left: 40px;
+    }
+
+    .logo {
+        margin-top: 0;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+    .logo:hover,
+    .nav-links:hover {
+        color: rgba(255, 255, 255, 1);
+    }
+
+    .logo {
+        display: flex;
+
+    }
+
+}
+
+.marge {
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+/* ///////////////canvas/////////////////*/
+
+canvas {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+
+
+
+
+
+section {
+    color: whitesmoke;
+}
+
+/* //////////////section explanation//////////////////*/
+
+.explanation {
+    margin: 2em;
+    text-align: justify;
+}
+
+
+.typing {
+    width: 12em;
+    animation: typing 3s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: 'Rubik', sans-serif;
+    border-right: 3px solid;
+    animation-iteration-count: infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+
+/* //////////////section chat//////////////////*/
+
+.chat {
+    display: flex;
+    align-items: center;
+    background-color: lightblue;
+    padding: 10% 0;
+}
+
+.chat div:first-child {
+    width: 20%;
+    margin: 3em;
+}
+
+.chat img {
+    height: 20vh;
+}
+
+.chat div:nth-child(2) {
+    background-color: #181039;
+    padding: 3em;
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* //////////////section contact//////////////////*/
+
+#contact {
+    text-align: center;
+}
+
+#contact img {
+    width: 20%;
+}
+
+.logo {
+    align-items: center;
+    justify-content: center;
+    margin: 2em 0;
+}
+
+#contact h1 {
+    margin-top: 1em;
+}
+
+/* ///////////////CHATBOT//////////////// */
+
+@media only screen and (max-width: 600px) {
+
+    .chat {
+        display: block;
+    }
+
+    .chat div:first-child {
+        width: 50%;
+        padding: 1em;
+        margin: 2em 1em;
+    }
+}
