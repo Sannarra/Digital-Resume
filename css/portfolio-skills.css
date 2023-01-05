@@ -147,6 +147,11 @@ footer {
 }
 
 
+.img {
+    display: flex;
+    align-items: center;
+}
+
 @media screen and (min-width: 768px) {
     .navbar {
         display: flex;
@@ -196,5 +201,9 @@ footer {
 
     .row:nth-child(even) {
         flex-direction: column-reverse;
+    }
+
+    .row img {
+        max-width: 10em;
     }
 }
